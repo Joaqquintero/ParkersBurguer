@@ -1,0 +1,146 @@
+// Colores
+$colorppal: #0048AA;
+$colorsec: #FD9A00;
+
+* {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.welcome{
+    background-color: $colorppal;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__img img{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor__1{
+    background-color: $colorppal;
+    height: auto;
+    padding: 40px;
+    padding-bottom: 100px;
+}
+
+.contenedor__direccion--modified{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contenedor__direccion{
+    height: 250px;
+    width: 70%;
+    border: 5px solid white;
+    transform: skew(-20deg);
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+.contenedor__direccion img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor__direccion:hover{
+    scale: 1.3;
+    transform: skew(20deg);
+    border: solid white 10px;
+    overflow: hidden;
+}
+
+.contenedor__direccion--h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $colorsec;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    background-color: $colorppal;
+    padding: 15px;
+}
+
+.contenedor__2{
+    height: 800px;
+}
+
+.contenedor__2 h2{
+    text-align: center;
+    color: $colorsec;
+    background-color: #002457b3;
+    padding: 30px;
+    font-size: 35px;
+}
+
+.contenedor__2--modified{
+    background-color: #002457b3;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: #002457b3;
+    padding: 30px 50px 30px 50px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 400px;
+}
+
+.burguer{
+    height: 300px;
+    width: 100%;
+    background-color: $colorppal;
+    margin: 15px;
+    border: 5px solid white;
+    padding: 8px;
+}
+
+.burguer h3{
+    color: rgb(181, 32, 32);
+}
+
+.burguer p{
+    color: $colorsec;
+}
+
+.burguer__right p{ 
+    color: rgb(229, 229, 229);
+    padding-left: 25px;
+}
+
+.burguer span{
+    background-color: $colorsec;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.parallax {
+    background-image: url(img/parkerslogo.jpg);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 920px) {
+    .contenedor__direccion{
+        filter: none;
+    }
+}
