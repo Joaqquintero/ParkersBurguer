@@ -70,8 +70,57 @@
   padding: 15px;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0048AA;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+  font-size: 20px;
+}
+
+.scroll-to-top:hover {
+  background-color: #FD9A00;
+}
+
+.floating__button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #C13584;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.floating__button:hover {
+  background-color: #075e54;
+  text-decoration: none;
+  color: white;
+}
+
 .contenedor__2 {
-  height: 800px;
+  height: auto;
 }
 
 .contenedor__2 h2 {
@@ -84,6 +133,7 @@
 
 .contenedor__2--modified {
   background-color: rgba(0, 36, 87, 0.7019607843);
+  padding-bottom: 100px;
 }
 
 .carousel-item img {
@@ -135,6 +185,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0048AA;
+  color: #FD9A00;
+  font-size: 20px;
+}
+
+.footer a {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.footer a:hover {
+  color: #FD9A00;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 920px) {
