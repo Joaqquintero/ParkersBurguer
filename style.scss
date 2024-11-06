@@ -180,6 +180,37 @@ $colorsec: #FD9A00;
     padding: 5px;
 }
 
+.envioTA{
+    margin: 0;
+}
+
+.envioTA h3{
+    text-align: center;
+    color: $colorsec;
+    background-color: #002457b3;
+    padding: 15px;
+}
+
+.envioTA p{
+    background-color: #002457;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.conteiner__envio{
+    padding: 15px;
+}
+
+.conteiner__TA{
+    padding: 15px;
+    padding-bottom: 90px;
+}
+
+.envioTA h2{
+    margin: 0;
+}
+
 .parallax {
     background-image: url(img/parkerslogo.jpg);
     height: auto;
@@ -209,6 +240,28 @@ $colorsec: #FD9A00;
 .footer a:hover{
     color: $colorsec;
     text-decoration: none;
+}
+
+.contenedor__3{
+    padding: 60px 20px 60px 20px;
+    background-color: $colorppal;
+}
+
+.contenedor__3 h2{
+    color: $colorsec;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+.contenedor__3--map iframe{
+    width: 100%;
+    border-radius: 5px;
+    border: 5px solid $colorsec;
+}
+
+.contenedor__3 p{
+    font-size: 16px;
+    color: $colorsec;
 }
 
 
